@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { fetchPetsById } from "../../services/pets";
 import PetDetails from "../../components/PetDetails/PetDetails";
 import Header from "../../components/Header/Header";
+import PetList from "../../components/PetDetails/PetList";
 
 export default function Individual(props) {
   const [pet, setPet] = useState([]);
@@ -23,6 +24,7 @@ export default function Individual(props) {
 
   return (
     <div className="pet-details">
+      {pet.name}
       <Header />
       <PetDetails pet={pet} />
     </div>

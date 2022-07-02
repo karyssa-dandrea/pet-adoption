@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function PetList({ pets }) {
+  console.log(pets);
   return (
     <>
       <div className="pet-list">

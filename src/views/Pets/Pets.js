@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { fetchPets } from '../../services/pets';
-import Header from '../../components/Header/Header';
-import PetList from '../../components/PetDetails/PetList';
+import React, { useEffect, useState } from "react";
+import { fetchPets } from "../../services/pets";
+import Header from "../../components/Header/Header";
+import PetList from "../../components/PetDetails/PetList";
 
 export default function Pets() {
   const [pets, setPets] = useState([]);
@@ -11,6 +11,7 @@ export default function Pets() {
     const fetchData = async () => {
       const data = await fetchPets();
       setPets(data);
+      console.log(data);
       setLoading(false);
     };
     fetchData();
