@@ -1,9 +1,17 @@
 import React from "react";
 
-export default function PetForm({ name, bio, image, updatePetState }) {
+export default function PetForm({
+  name,
+  bio,
+  image,
+  updatePetState,
+  buttonHandler,
+  message,
+}) {
   return (
     <div className="form">
       <h2>Add Pet Details!</h2>
+      <p>{message}</p>
       <div className="pet-form">
         <label>Name:</label>
         <input

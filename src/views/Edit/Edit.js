@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PetForm from "../../components/Form/PetForm";
 import Header from "../../components/Header/Header";
-import { fetchPetsById } from "../../services/pets";
+import { fetchPetsById, updatePet, deletePet } from "../../services/pets";
 
 export default function Edit() {
   const [pet, setPet] = useState({});
