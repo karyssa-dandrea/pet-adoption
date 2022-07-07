@@ -13,6 +13,7 @@ export default function Edit() {
     const fetchData = async () => {
       const resp = await fetchPetsById(params.id);
       setPet(resp);
+      console.log(pet);
     };
     fetchData();
   }, [params.id]);
