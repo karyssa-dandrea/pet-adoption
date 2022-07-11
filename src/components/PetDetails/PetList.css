@@ -4,7 +4,6 @@
   padding: 10px;
   align-items: center;
   background-color: #cec3c8;
-  font-family: "Merriweather Sans", sans-serif;
 }
 
 img {
@@ -17,8 +16,12 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 25px;
+  border: 1px solid #3c240d;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #cec3c8;
   align-items: center;
   justify-content: center;
-  background-color: #cec3c8;
-  font-family: "Merriweather Sans", sans-serif;
 }

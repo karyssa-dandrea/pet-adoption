@@ -6,6 +6,7 @@ export default function Header() {
     <div className="header">
       <header>
         <NavLink to="/pets">Home</NavLink>
+        <NavLink to="/admin">Admin</NavLink>
       </header>
     </div>
   );
