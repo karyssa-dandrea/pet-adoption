@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./PetList.css";
+import styles from "./PetList.css";
 
-export default function PetDetails({ pet, deleteButton, message }) {
+export default function PetDetails({ pet, deleteButton }) {
   return (
-    <div className="pet-details">
+    <div className={styles.pet_details}>
       <h1>{pet.name}</h1>
-      <p>{message}</p>
       <p>{pet.bio}</p>
       <img src={pet.image}></img>
 
